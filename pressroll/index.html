@@ -281,8 +281,46 @@
     line-height: 1.55;
     color: var(--fg);
   }
+  .service-hints {
+    margin-top: 10px;
+    border: none;
+  }
+  .service-hints summary {
+    font-family: var(--display);
+    font-size: 0.76rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--blue);
+    cursor: pointer;
+    padding: 6px 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+  }
+  .service-hints summary::-webkit-details-marker { display: none; }
+  .service-hints summary::before {
+    content: "+";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+  }
+  .service-hints[open] summary::before {
+    content: "\2212";
+  }
   .service-sub {
-    margin-top: 8px;
+    margin-top: 6px;
     padding: 8px 12px;
     background: var(--tag-bg);
     border-radius: 6px;
@@ -557,26 +595,34 @@
       <div class="service-item">
         <strong>Наклейки любых видов</strong>
         <p>Печатаем наклейки, в том числе с вырубкой по контуру логотипа или сложной формы.</p>
+        <details class="service-hints"><summary>Подсказки оператору</summary>
         <div class="service-sub"><b>Если спросят про материалы:</b> все подробности сообщит менеджер. Я передам ему ваши контакты, и он свяжется с вами. Сегодня будет удобно?</div>
         <div class="service-sub"><b>Если спросят про минимальный заказ:</b> минимальный заказ - от 3000 &#8381;. Менеджер посчитает, что войдет в эту сумму по вашему макету, и свяжется с вами сегодня. Удобно?</div>
+        </details>
       </div>
       <div class="service-item">
         <strong>Баннеры + монтаж конструкций</strong>
         <p>Печатаем баннеры шириной до 3 метров и длиной до 49 метров. Конструкции монтируем сами, на сторону не отдаем.</p>
+        <details class="service-hints"><summary>Подсказки оператору</summary>
         <div class="service-sub"><b>Если спросят про монтаж или детали:</b> все подробности сообщит менеджер. Я передам ему ваши контакты, и он свяжется с вами. Сегодня будет удобно?</div>
         <div class="service-sub"><b>Если спросят про минимальный заказ:</b> минимальный заказ - от 3000 &#8381;. Менеджер посчитает по вашему объекту и свяжется с вами сегодня. Удобно?</div>
+        </details>
       </div>
       <div class="service-item">
         <strong>DTF и UV DTF перенос</strong>
         <p>DTF - перенос рисунка на ткань. UV DTF - перенос на сувенирную продукцию. Переносим сами, без подрядчиков.</p>
+        <details class="service-hints"><summary>Подсказки оператору</summary>
         <div class="service-sub"><b>Если спросят про условия или срок:</b> все подробности сообщит менеджер. Я передам ему ваши контакты, и он свяжется с вами. Сегодня будет удобно?</div>
         <div class="service-sub"><b>Если спросят про минимальный заказ:</b> минимальный заказ - от 3000 &#8381;. Менеджер посчитает по вашему тиражу и свяжется с вами сегодня. Удобно?</div>
+        </details>
       </div>
       <div class="service-item">
         <strong>3D-наклейки (заливка смолой)</strong>
         <p>Объемные наклейки: рисунок заливаем полимерной смолой, получается выпуклый глянцевый элемент. Бывают с куполом смолы, прозрачные и стикерпаки. Ставим на упаковку, бутылки, промо.</p>
+        <details class="service-hints"><summary>Подсказки оператору</summary>
         <div class="service-sub"><b>Если спросят про срок или детали:</b> все подробности сообщит менеджер. Я передам ему ваши контакты, и он свяжется с вами. Сегодня будет удобно?</div>
         <div class="service-sub"><b>Если спросят про минимальный заказ:</b> минимальный заказ - от 3000 &#8381;. Менеджер посчитает по вашему макету и свяжется с вами сегодня. Удобно?</div>
+        </details>
       </div>
       <div class="service-visit">Если удобнее увидеть все лично - можем встретить вас на нашем производстве у метро Нагатинская и все показать.</div>
     </div>
